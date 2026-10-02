@@ -1,9 +1,9 @@
-</div> <!-- End of content-card -->
-</main>
+</div> <!-- End .content-card -->
 
-<footer style="text-align: center; padding: 25px 0; color: #64748B; font-size: 0.85rem; margin-top: 40px;">
-    <p>&copy; <?= date('Y'); ?> POS Application. All Rights Reserved.</p>
-</footer>
+    <footer style="margin-top: 24px; text-align: center; color: #94A3B8; font-size: 0.8rem;">
+        <p>&copy; <?= date('Y'); ?> POS System. All rights reserved.</p>
+    </footer>
+</main> <!-- End .main-wrapper -->
 
 </body>
 </html>
