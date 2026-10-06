@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /CRUZ/tsa1/
+
+    # Direct empty requests to public/index.php
+    RewriteRule ^$ public/index.php [L]
+
+    # Direct all sub-routes to public/index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php/$1 [L]
+</IfModule>
